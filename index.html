@@ -1,127 +1,50 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Club</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-    box-sizing: border-box;
-}
-
-h1 {
-    font-size: 48px;
-}
-
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 15px;
-}
-
-#hero {
-    background-color: #315bea;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    border-radius: 15px;
-}
-        body {
-            background-color: #eef2ff;
-            font-family: Georgia, serif;
-            margin: 20px;
-        }
-
-        #hero {
-            background-color: #315bea;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            border-radius: 15px;
-        }
-
-        .card {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 15px;
-        }
-        body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #eef2ff;
-    margin: 20px;
-    line-height: 1.6;
-}
-
-h1 {
-    font-size: 48px;
-    line-height: 1.2;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-p {
-    font-size: 18px;
-}
-
-#hero {
-    background-color: #315bea;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    border-radius: 15px;
-}
-    </style>
+    <title>My Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header id="hero">
-        <h1>Tech Club</h1>
-        <p>Learn. Code. Grow.</p>
-    </header>
+<main class="profile-container">
 
-    <section class="card">
-        <h2>Upcoming Events</h2>
-        <table width="100%">
-            <tr style="background-color:#315bea; color:white;">
-                <th>Event</th>
-                <th>Date</th>
-                <th>Venue</th>
-            </tr>
-            <tr>
-                <td>HTML Workshop</td>
-                <td>12 Nov</td>
-                <td>Lab 1</td>
-            </tr>
-            <tr>
-                <td>Hackathon</td>
-                <td>20 Nov</td>
-                <td>Seminar Hall</td>
-            </tr>
-        </table>
-        
-    </section>
+    <!-- Blue Card -->
+    <div class="profile-card blue-card">
 
-    <section class="card">
-        <h2>Register</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your name">
-            <br><br>
+        <div class="avatar blue-avatar">N</div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="you@example.com">
-            <br><br>
+        <h2>Nisha</h2>
 
-            <button type="submit">Register</button>
-        </form>
-    </section>
+        <p>Web Developer in Making</p>
+<div class="bio">
+    Hi! I am Shivam. I started coding this year.
+    I like making small websites, drawing and
+    listening to music. My goal is to build my
+    own app. I love learning HTML and CSS.
+</div>
+<button class="add-btn">+</button>
+    </div>
 
+    <!-- Pink Card -->
+    <div class="profile-card pink-card">
+
+        <div class="avatar pink-avatar">S</div>
+
+        <h2>Shivam</h2>
+
+        <p>Frontend Developer</p>
+        <div class="bio">
+    Hi! I am Shivam. I started coding this year.
+    I like making small websites, drawing and
+    listening to music. My goal is to build my
+    own app. I love learning HTML and CSS.
+</div>
+<button class="add-btn">+</button>
+    </div>
+
+
+</main>
 
 </body>
 </html>
