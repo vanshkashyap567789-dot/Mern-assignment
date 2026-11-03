@@ -1,48 +1,127 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WanderGo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tech Club</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+#hero {
+    background-color: #315bea;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+        body {
+            background-color: #eef2ff;
+            font-family: Georgia, serif;
+            margin: 20px;
+        }
+
+        #hero {
+            background-color: #315bea;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+        body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2ff;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#hero {
+    background-color: #315bea;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+    </style>
 </head>
 <body>
 
-   <nav class="navbar">
-    <h2>WanderGo</h2>
+    <header id="hero">
+        <h1>Tech Club</h1>
+        <p>Learn. Code. Grow.</p>
+    </header>
 
-    <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Trips</a>
-        <a href="#">Contact</a>
-    </div>
-</nav>
+    <section class="card">
+        <h2>Upcoming Events</h2>
+        <table width="100%">
+            <tr style="background-color:#315bea; color:white;">
+                <th>Event</th>
+                <th>Date</th>
+                <th>Venue</th>
+            </tr>
+            <tr>
+                <td>HTML Workshop</td>
+                <td>12 Nov</td>
+                <td>Lab 1</td>
+            </tr>
+            <tr>
+                <td>Hackathon</td>
+                <td>20 Nov</td>
+                <td>Seminar Hall</td>
+            </tr>
+        </table>
+        
+    </section>
 
-<section class="hero">
-    <h1>Plan your next trip in minutes</h1>
-    <p>Simple, cheap and fun travel plans.</p>
+    <section class="card">
+        <h2>Register</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name">
+            <br><br>
 
-    <div class="hero-image">
-        <img src="img/hero.jpg" alt="Beautiful travel destination">
-    </div>
-</section>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="you@example.com">
+            <br><br>
 
-<section class="features">
-    <div class="card">
-        <h3>Easy Booking</h3>
-        <p>Book in 3 clicks.</p>
-    </div>
+            <button type="submit">Register</button>
+        </form>
+    </section>
 
-    <div class="card">
-        <h3>Best Prices</h3>
-        <p>We compare for you.</p>
-    </div>
 
-    <div class="card">
-        <h3>24x7 Help</h3>
-        <p>We are always here.</p>
-    </div>
-</section>
 </body>
 </html>
-
