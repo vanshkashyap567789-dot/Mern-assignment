@@ -1,72 +1,90 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevPath Landing Page</title>
+    <title>CSS Grid Dashboard </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 7.1 Navbar -->
-    <nav class="navbar">
+    
 
-        <div class="logo">DevPath</div>
+    <div class="dashboard">
 
-        <div class="nav-right">
+        <header class="head">
+            <h2>My Dashboard</h2>
+        </header>
 
-            <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Courses</a>
-                <a href="#">Contact</a>
-            </div>
+        <aside class="side">
+            <h3>Menu</h3>
+            <ul>
+                <li>Home</li>
+                <li>Reports</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
 
-            <button class="signup-btn">Sign up</button>
+        
+           <main class="main">
 
+    <div class="box">
+        <span class="icon">👤</span>
+        <div>
+            <h3>120</h3>
+            <p>Users</p>
         </div>
+    </div>
 
-    </nav>
-
-
-    <!-- 7.2 Banner -->
-    <section class="banner">
-
-        <h1>Learn Web Development</h1>
-
-        <p>Start from zero. Build real projects.</p>
-
-        <button class="start-btn">Get started</button>
-
-    </section>
-
-
-    <!-- 7.3 Cards -->
-    <section class="cards-container">
-
-        <div class="card">
-            <h3>HTML</h3>
-            <p>Build the structure</p>
+    <div class="box">
+        <span class="icon">💰</span>
+        <div>
+            <h3>Rs 45k</h3>
+            <p>Sales</p>
         </div>
+    </div>
 
-        <div class="card">
-            <h3>CSS</h3>
-            <p>Make it beautiful</p>
+    <div class="box">
+        <span class="icon">📦</span>
+        <div>
+            <h3>36</h3>
+            <p>Orders</p>
         </div>
+    </div>
 
-        <div class="card">
-            <h3>JavaScript</h3>
-            <p>Make it smart</p>
+    <div class="box">
+        <span class="icon">⭐</span>
+        <div>
+            <h3>4.8</h3>
+            <p>Rating</p>
         </div>
+    </div>
 
-        <div class="card">
-            <h3>Git</h3>
-            <p>Save your work</p>
+    <div class="box">
+        <span class="icon">💬</span>
+        <div>
+            <h3>18</h3>
+            <p>Messages</p>
         </div>
+    </div>
 
-    </section>
+    <div class="box">
+        <span class="icon">✅</span>
+        <div>
+            <h3>92%</h3>
+            <p>Done</p>
+        </div>
+    </div>
+
+</main>
+        
+
+        <footer class="foot">
+            Made with CSS Grid
+        </footer>
+
+    </div>
 
 </body>
 </html>
 
-```
