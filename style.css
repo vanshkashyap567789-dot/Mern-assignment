@@ -1,91 +1,78 @@
-/* Profile Container */
-
-.profile-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 25px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Profile Card */
-
-.profile-card {
-    width: 290px;
-    height: 328px;
-    background: white;
-    border: 2px solid;
-    border-radius: 18px;
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f8;
     padding: 20px;
-    text-align: center;
 }
 
-/* Avatar */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        "head head"
+        "side main"
+        "foot foot";
+    gap: 15px;
+}
 
-.avatar {
-    width: 94px;
-    height: 94px;
-    border-radius: 50%;
+.head {
+    grid-area: head;
+    background: #14233f;
     color: white;
-    font-size: 38px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.side {
+    grid-area: side;
+    background: #dce6fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.side ul {
+    padding: 15px 20px;
+    line-height: 1.8;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.foot {
+    grid-area: foot;
+    background: #14233f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    margin: 0 auto 20px;
+    gap: 15px;
 }
 
-/* Blue Version */
-
-.blue-card {
-    border-color: blue;
+.icon {
+    font-size: 32px;
 }
 
-.blue-avatar {
-    background: blue;
+.box h3 {
+    font-size: 18px;
 }
 
-/* Pink Version */
-
-.pink-card {
-    border-color: deeppink;
-}
-
-.pink-avatar {
-    background: deeppink;
-}
-.bio {
-    height: 82px;
-    border: 1px solid #c8c8d5;
-    padding: 8px;
-    text-align: left;
-    font-size: 14px;
-    overflow: auto;
-}
-header {
-    position: sticky;
-    top: 0;
-    z-index: 5;
-
-    background: #11213d;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-.add-btn {
-    position: fixed;
-    right: 35px;
-    bottom: 30px;
-
-    width: 55px;
-    height: 55px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: #ffb400;
-    font-size: 27px;
-
-    cursor: pointer;
-    z-index: 10;
+.box p {
+    font-size: 16px;
 }

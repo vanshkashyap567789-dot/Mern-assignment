@@ -1,50 +1,90 @@
-<<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Profile Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Dashboard </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<main class="profile-container">
+    
 
-    <!-- Blue Card -->
-    <div class="profile-card blue-card">
+    <div class="dashboard">
 
-        <div class="avatar blue-avatar">N</div>
+        <header class="head">
+            <h2>My Dashboard</h2>
+        </header>
 
-        <h2>Nisha</h2>
+        <aside class="side">
+            <h3>Menu</h3>
+            <ul>
+                <li>Home</li>
+                <li>Reports</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
 
-        <p>Web Developer in Making</p>
-<div class="bio">
-    Hi! I am Shivam. I started coding this year.
-    I like making small websites, drawing and
-    listening to music. My goal is to build my
-    own app. I love learning HTML and CSS.
-</div>
-<button class="add-btn">+</button>
+        
+           <main class="main">
+
+    <div class="box">
+        <span class="icon">👤</span>
+        <div>
+            <h3>120</h3>
+            <p>Users</p>
+        </div>
     </div>
 
-    <!-- Pink Card -->
-    <div class="profile-card pink-card">
-
-        <div class="avatar pink-avatar">S</div>
-
-        <h2>Shivam</h2>
-
-        <p>Frontend Developer</p>
-        <div class="bio">
-    Hi! I am Shivam. I started coding this year.
-    I like making small websites, drawing and
-    listening to music. My goal is to build my
-    own app. I love learning HTML and CSS.
-</div>
-<button class="add-btn">+</button>
+    <div class="box">
+        <span class="icon">💰</span>
+        <div>
+            <h3>Rs 45k</h3>
+            <p>Sales</p>
+        </div>
     </div>
 
+    <div class="box">
+        <span class="icon">📦</span>
+        <div>
+            <h3>36</h3>
+            <p>Orders</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="icon">⭐</span>
+        <div>
+            <h3>4.8</h3>
+            <p>Rating</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="icon">💬</span>
+        <div>
+            <h3>18</h3>
+            <p>Messages</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <span class="icon">✅</span>
+        <div>
+            <h3>92%</h3>
+            <p>Done</p>
+        </div>
+    </div>
 
 </main>
+        
+
+        <footer class="foot">
+            Made with CSS Grid
+        </footer>
+
+    </div>
 
 </body>
 </html>
+
